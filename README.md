@@ -1,2 +1,2 @@
 # Hangman Game
-2nd big homework @ESMT Coding Bootcamp Berlin - 3rd week recommended assignment
+Recommended Assignment. 2nd big assignment, 3rd week @ Coding Bootcamp ESMT Berlin
