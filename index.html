@@ -6,23 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hangman</title>
 </head>
 
 <body>
 
-    <h1>The Hangman Game</h1>
-    <p>Guess what word I am thinking of!</p>
-    <p>Current word </p>
-    <p id="hidden"></p>
+    <header>
+        <h1>The Hangman Game</h1>
+    </header>
+    <div>
 
-    <p>Wins: <span id="win"></p>
-    <p>Letters already guessed: <span id="user-list"></p>
-    <p>Numbers of guesses remaining: <span id="left"></p>
-    <p>Doubles don't count towards your guesses left</p>
+        <h2>Guess what word I am thinking of!</h2>
+        <h3>Current word </h3>
+        <p id="hidden"></p>
+
+        <p>Wins:</p> 
+        <p id="win"></p>
+        <p>Letters already guessed:</p>
+        <p id="user-list"></p>
+        <p>Numbers of guesses remaining:</p>
+        <p id="left"></p>
+        <p>Doubles don't count towards your guesses left</p>
+
+    </div>
 
     <script>
-    newGame();
+        newGame();
     </script>
 
 </body>
