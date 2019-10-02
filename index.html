@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>The Hangman Game</h1>
+    <p>Guess what word I am thinking of!</p>
+    <p>Current word </p>
+    <p id="hidden"></p>
+
+    <p>Wins: <span id="win"></p>
+    <p>Letters already guessed: <span id="user-list"></p>
+    <p>Numbers of guesses remaining: <span id="left"></p>
+    <p>Doubles don't count towards your guesses left</p>
+
+    <script>
+    newGame();
+    </script>
+
+</body>
+
+</html>
