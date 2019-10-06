@@ -50,3 +50,11 @@ function newGame() {
     }
   };
 }
+
+// function startGame() {
+//     document.onkeypress = function (event) {
+//         if (event.key === " ") {
+//             newGame();
+//         }
+//     }
+// }

@@ -20,6 +20,7 @@ div {
   color: #eeeeee;
   width: 75%;
   height: 75vh;
+  position: relative;
 }
 
 h1 {
@@ -31,11 +32,31 @@ h2 {
 }
 
 p {
-  padding: 5px 0;
+  padding-top: 5px;
 }
 
 #hidden,
 #user-list {
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+@media screen and (min-width: 1025px) {
+  .guesses {
+    position: absolute;
+    bottom: 55px;
+    width: 100%;
+  }
+
+  #numbers {
+    position: absolute;
+    bottom: 125px;
+    width: 100%;
+  }
+
+  #fixed {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
 }
