@@ -1,27 +1,41 @@
 body {
-    background-color:#f1f0cf;
+  background-color: #eeeeee;
+  font-family: "Shadows Into Light", cursive, "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 3px;
 }
 
 header {
-    text-align: center;
-    background-color: #b6e6bd ;
-    padding: 20px 0;
-    width: 75%;
-    margin: auto;
+  text-align: center;
+  background-color: #00adb5;
+  padding: 20px 0;
+  width: 75%;
+  margin: 20px auto;
 }
 
 div {
-    margin: auto;
-    text-align: center;
-    background-color: #4baea0;
-    width: 75%;
-    height: 75vh;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #393e46;
+  color: #eeeeee;
+  width: 75%;
+  height: 75vh;
 }
 
-p {
-    padding: 10px 0;
+h1 {
+  color: #222831;
 }
 
 h2 {
-    padding-top: 20px;
+  padding-top: 50px;
+}
+
+p {
+  padding: 5px 0;
+}
+
+#hidden,
+#user-list {
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }

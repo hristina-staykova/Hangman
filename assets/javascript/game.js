@@ -1,5 +1,5 @@
 var wins = 0;
-        var compList = ["queen", "nirvana", "coldplay", "muse"];
+        var compList = ["game", "brother", "father", "mother", "sofa", "chair", "food", "yellow", "green", "skateboard", "bicycle", "school", "eight", "eleven", "twelve","fifteen", "thirteen", "family", "friend", "food"];
 
         function newGame() {
         var compChoice = compList[Math.floor(Math.random() * compList.length)];
@@ -11,11 +11,13 @@ var wins = 0;
         console.log(hiddenWord);
         var displayWord = hiddenWord.join(" ");
         var guessList = [];
-        left = 6;
+        left = 13;
         document.getElementById("left").innerHTML = left;
         document.getElementById("user-list").innerHTML = guessList;
         document.getElementById("win").innerHTML = wins;
-        document.getElementById("hidden").innerHTML = displayWord;
+        setTimeout(function () {
+            document.getElementById("hidden").innerHTML = displayWord;
+        }, 2000);
 
         var compChoiceArray = compChoice.split('');
 
@@ -43,7 +45,10 @@ var wins = 0;
                 document.getElementById("user-list").innerHTML = guessList;
                 document.getElementById("left").innerHTML = left;
                 if (left === 0){
-                    newGame();
+                    document.getElementById("hidden").innerHTML = compChoice;
+                    setTimeout(function () {
+                        newGame();
+                    }, 2000);
                 }
             }
         }
