@@ -13,9 +13,7 @@ function newGame() {
   document.getElementById("left").innerHTML = left;
   document.getElementById("user-list").innerHTML = guessList;
   document.getElementById("win").innerHTML = wins;
-  setTimeout(function() {
-    document.getElementById("hidden").innerHTML = displayWord;
-  }, 2000);
+  document.getElementById("hidden").innerHTML = displayWord;
 
   var compChoiceArray = compChoice.split("");
 
@@ -32,7 +30,10 @@ function newGame() {
     if (!hiddenWord.includes("_")) {
       wins++;
       document.getElementById("win").innerHTML = wins;
-      newGame();
+      document.getElementById("hidden").innerHTML = compChoice;
+        setTimeout(function() {
+          newGame();
+        }, 2000);
     }
 
     if (!compChoice.includes(userInput) && !guessList.includes(userInput)) {
